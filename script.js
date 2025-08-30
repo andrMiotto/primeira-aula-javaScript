@@ -44,7 +44,7 @@ console.log(resultado);
    ============================== */
 // for(inicialização; condição; incremento)
 for (let i = 0; i < 2; i++) {
-    console.log(i); // imprime 0 e 1
+   console.log(i); // imprime 0 e 1
 }
 
 
@@ -68,7 +68,7 @@ let y = 20;
    ============================== */
 // Declaração de função nomeada
 function funcaoSoma(param1, param2) {
-    return param1 + param2; // return → retorna o valor
+   return param1 + param2; // return → retorna o valor
 }
 
 // Chamada da função com argumentos
@@ -76,3 +76,30 @@ console.log("Funções");
 console.log(funcaoSoma(3, 2)); // imprime 5
 
 
+//Funcoes imediatas
+(function () {
+   let mensagem2 = "Executado imediatamente"
+   console.log(mensagem2);
+})();
+
+//Funcoes callback
+
+function saudacao(nome, andre) {
+   console.log("Ola " + nome);
+   andre();
+}
+
+saudacao("João", function () {
+   console.log("Callback executado")
+});
+
+
+//Funcoes construtoras
+
+function quadrado(n) {
+   console.log("Terminei")
+   return n * n;
+}
+
+
+console.log(quadrado(4));
