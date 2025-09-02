@@ -5,10 +5,10 @@ require('prompt-sync')
 
 
 let numeroFatorial = Number(prompt('Digite um numero para saber seu fatorial'));
+let number = numeroFatorial;
+while(number != 0){
 
-do {
-    numeroFatorial = numeroFatorial * (numeroFatorial - 1);
+    number --;
+     numeroFatorial = numeroFatorial * number;
     console.log(numeroFatorial)
-} while (numeroFatorial < 0) {
-    console.log('Teste')
 }
