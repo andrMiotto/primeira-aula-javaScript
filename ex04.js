@@ -4,11 +4,14 @@ const prompt = require('prompt-sync')();
 require('prompt-sync')
 
 
-let numeroFatorial = Number(prompt('Digite um numero para saber seu fatorial'));
+let numeroFatorial = Number(prompt('Digite um numero para saber seu fatorial: '));
 let number = numeroFatorial;
-while(number != 0){
 
-    number --;
-     numeroFatorial = numeroFatorial * number;
-    console.log(numeroFatorial)
+function fatorialRecursivo(n) {
+  if (n == 0 || n == 1) {
+    return 1;
+  }
+  return n * fatorialRecursivo(n - 1);
 }
+
+console.log(fatorialRecursivo(numeroFatorial));
