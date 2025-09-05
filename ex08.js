@@ -1,12 +1,11 @@
-//6 - Converter uma temperatura em Celsius para Fahrenheit.
+//8 - Some todos os números de 1 a 100 e exiba o resultado no console.
 
 
-let numero = 1;
+let soma = 0;
 
-for(let i = 1; i <= 100; i++){
+for (let i = 1; i <= 100; i++) {
 
-do{
-    numero = numero*i;
-}while(numero >= 100){
+    soma += i;
 
-}}
+}
+console.log(soma);
